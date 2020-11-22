@@ -1,0 +1,2 @@
+# jenkins-configuration-as-a-code
+Jenkins uses a pluggable architecture to provide most of its functionality. JCasC makes use of the Configuration as Code plugin, which allows you to define the desired state of your Jenkins configuration as one or more YAML file(s), eliminating the need for the setup wizard. On initialization, the Configuration as Code plugin would configure Jenkins according to the configuration file(s), greatly reducing the configuration time and eliminating human errors.
