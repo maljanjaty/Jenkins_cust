@@ -8,6 +8,9 @@ credentials-binding:latest
 email-ext:latest
 git:latest
 github-branch-source:latest
+gitlab-merge-request-jenkins:latest
+gitlab-oauth:latest
+gitlab-plugin:latest
 gradle:latest
 ldap:latest
 mailer:latest
