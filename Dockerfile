@@ -7,6 +7,7 @@ ENV JAVA_OPTS -Djenkins.install.runSetupWizard=false
 COPY plugins2.txt /usr/share/jenkins/ref/plugins.txt
 # RUN /usr/local/bin/install-plugins.sh < /usr/share/jenkins/ref/plugins.txt
 RUN jenkins-plugin-cli -f /usr/share/jenkins/ref/plugins.txt
+RUN jenkins-plugin-cli --plugins blueocean kubernetes
 
 # Set the varibale so that the code as configuration can use that
 ENV CASC_JENKINS_CONFIG /var/jenkins_home/casc.yaml
