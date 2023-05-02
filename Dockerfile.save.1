@@ -31,11 +31,13 @@ RUN curl -L \
   && chmod +x /usr/local/bin/docker-compose
 
 RUN curl -fsSL https://deb.nodesource.com/setup_19.x | bash - &&\
-apt-get install -y nodejs 
+apt-get install -y nodejs
+
+WORKDIR 
+RUN npm eslint-config-airbnb 
  
 RUN usermod -aG docker jenkins
-
-#RUN npm install -g eslint eslint-config-airbnb
+ 
 #RUN curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
 #RUN nvm install node 
 #RUN npm install -g eslint eslint-plugin-import eslint-plugin-node eslint-plugin-promise eslint-plugin-standard eslint-config-standard
